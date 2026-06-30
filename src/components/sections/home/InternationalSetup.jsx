@@ -3,9 +3,9 @@
  * Grid of countries for international business setup
  */
 import React from 'react'
-import { countries } from '../../data/countries'
-import CountryCard from '../ui/CountryCard'
-import useScrollReveal from '../../hooks/useScrollReveal'
+import { countries } from '../../../data/countries'
+import CountryCard from '../../ui/CountryCard'
+import useScrollReveal from '../../../hooks/useScrollReveal'
 
 export default function InternationalSetup(){
   useScrollReveal()

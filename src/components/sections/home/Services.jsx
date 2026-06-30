@@ -3,9 +3,9 @@
  * Services listing section using ServiceCard components
  */
 import React from 'react'
-import { services } from '../../data/services'
-import ServiceCard from '../ui/ServiceCard'
-import useScrollReveal from '../../hooks/useScrollReveal'
+import { services } from '../../../data/services'
+import ServiceCard from '../../ui/ServiceCard'
+import useScrollReveal from '../../../hooks/useScrollReveal'
 
 export default function Services(){
   useScrollReveal()

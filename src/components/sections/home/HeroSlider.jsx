@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
-import { slides } from '../../data/slides';
+import { slides } from '../../../data/slides';
 
 export default function HeroSlider() {
   return (

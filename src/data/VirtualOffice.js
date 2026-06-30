@@ -1,0 +1,45 @@
+export const virtualOfficePackages = [
+  {
+    id: 1,
+    title: "Starter",
+    price: "Rp 3.500.000",
+    period: "/year",
+    description: "Ideal for startups and freelancers.",
+    featured: false,
+    features: [
+      "Business Address",
+      "Mail Handling",
+      "Receptionist",
+      "Business Domicile",
+    ],
+  },
+  {
+    id: 2,
+    title: "Professional",
+    price: "Rp 5.500.000",
+    period: "/year",
+    description: "Most popular package.",
+    featured: true,
+    features: [
+      "Business Address",
+      "Mail Handling",
+      "Meeting Room",
+      "Receptionist",
+      "Business Domicile",
+    ],
+  },
+  {
+    id: 3,
+    title: "Enterprise",
+    price: "Rp 8.000.000",
+    period: "/year",
+    description: "Complete solution.",
+    featured: false,
+    features: [
+      "Everything in Professional",
+      "Dedicated Phone Number",
+      "Company Secretary",
+      "Premium Support",
+    ],
+  },
+];

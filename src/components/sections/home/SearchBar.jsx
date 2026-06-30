@@ -5,7 +5,7 @@
 import React, { useState } from 'react'
 import { MapPin } from 'lucide-react'
 
-const tabs = ['Virtual Office','Coworking Space','Ruang Meeting','Studio Podcast','Di Dekat Saya']
+const tabs = ['Virtual Office','Coworking Space','Ruang Meeting','Studio Podcast']
 
 export default function SearchBar(){
   const [active, setActive] = useState(0)

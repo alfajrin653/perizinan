@@ -3,9 +3,9 @@
  * About text and stats grid using StatCounter
  */
 import React from 'react';
-import { stats } from '../../data/stats';
-import StatCounter from '../ui/StatCounter';
-import useScrollReveal from '../../hooks/useScrollReveal';
+import { stats } from '../../../data/stats';
+import StatCounter from '../../ui/StatCounter';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 export default function AboutStats() {
   useScrollReveal();

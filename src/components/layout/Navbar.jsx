@@ -59,7 +59,7 @@ export default function Navbar() {
                       <h4 className='font-bold text-blue-600 mb-3'>Kantor & Ruang Kerja</h4>
                       <ul className='space-y-2 text-gray-600'>
                         <li>
-                          <a href='#' className='block hover:text-blue-600 transition-colors'>
+                          <a href='/virtual-office' className='block hover:text-blue-600 transition-colors'>
                             Virtual Office
                           </a>
                         </li>
