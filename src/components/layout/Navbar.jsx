@@ -34,7 +34,12 @@ export default function Navbar() {
         <div className='max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative'>
           {/* Logo */}
           <div className='text-lg font-semibold tracking-tight'>
+            <button>
+              <a href="/">
+
             OneStop <span className='font-bold text-blue-600'>Business Hub</span>
+              </a>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -64,12 +69,12 @@ export default function Navbar() {
                           </a>
                         </li>
                         <li>
-                          <a href='#' className='block hover:text-blue-600 transition-colors'>
+                          <a href='/Room-meet' className='block hover:text-blue-600 transition-colors'>
                             Ruang Meeting
                           </a>
                         </li>
                         <li>
-                          <a href='#' className='block hover:text-blue-600 transition-colors'>
+                          <a href='/Podcast-studio' className='block hover:text-blue-600 transition-colors'>
                             Studio Podcast
                           </a>
                         </li>

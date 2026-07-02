@@ -50,7 +50,7 @@ export default function VirtualOfficeSearch() {
               features={loc.features}
               price={loc.pricing?.price}
               period={loc.pricing?.period}
-              showPrice={true}
+              showPrice={false}
               buttonText="Lihat Detail"
               buttonLink={loc.link}
             />

@@ -11,7 +11,8 @@ import SearchBar from '../components/sections/home/SearchBar'
 import AboutStats from '../components/sections/home/AboutStats'
 import Services from '../components/sections/home/Services'
 import InternationalSetup from '../components/sections/home/InternationalSetup'
-import OfficeLocations from '../components/sections/VirtualOffice/OfficeLocations'
+import VirtualOfficeSearch from '../components/sections/home/VirtualOfficeSearch'
+import { Virtual } from 'swiper/modules'
 
 export default function HomePages(){
   return (
@@ -24,7 +25,7 @@ export default function HomePages(){
           <AboutStats />
           <Services />
           <InternationalSetup />
-          <OfficeLocations />
+          <VirtualOfficeSearch />
         </div>
       </main>
       {/* <Footer /> */}

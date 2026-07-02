@@ -5,6 +5,7 @@ import VirtualOfficeBenefits from '../components/sections/VirtualOffice/VirtualO
 import VirtualOfficeFAQ from '../components/sections/VirtualOffice/VirtualOfficeFAQ'
 import PricingSection from '../components/sections/VirtualOffice/PricingSection'
 import React from 'react'
+import CompanyPackageSection from '../components/sections/VirtualOffice/CompanyPackageCard'
 
 
 export default function VirtualOfficePage() {
@@ -15,6 +16,7 @@ export default function VirtualOfficePage() {
         <VirtualOfficeBenefits />
       <OfficeLocations />
         <PricingSection />
+        <CompanyPackageSection />
         <VirtualOfficeFAQ />
     </div>
   )

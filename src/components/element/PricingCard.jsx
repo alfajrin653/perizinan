@@ -41,7 +41,7 @@ export default function PricingCard({
       </p>
 
       <div className="mt-8">
-        <span className="text-5xl font-bold">
+        <span className="text-4xl font-bold">
           {price}
         </span>
 

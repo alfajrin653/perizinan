@@ -5,9 +5,9 @@ import CategoryFilter from "../../element/CatagoryFilter";
 import ProductCard from "../../element/ProductCard";
 
 import {
-  categories,
-  locations,
-} from "../../../data/locations";
+  meetingRooms,
+  meetingRoomCategories,
+} from "../../../data/MeetingRoomLocation";
 
 export default function VirtualOfficeSearch() {
 
@@ -15,9 +15,9 @@ export default function VirtualOfficeSearch() {
 
   const filteredLocations =
     activeCategory === "Semua"
-      ? locations
-      : locations.filter(
-          (loc) => loc.city === activeCategory
+      ? meetingRooms
+      : meetingRooms.filter(
+          (room) => room.city === activeCategory
         );
 
   return (
@@ -26,13 +26,15 @@ export default function VirtualOfficeSearch() {
       <div className="max-w-7xl mx-auto">
 
         <SectionHeader
-          badge="OUR LOCATIONS"
-          title="Temukan Lokasi Ideal Anda"
-          description="Pilih lokasi terbaik untuk mendukung perkembangan bisnis Anda."
+        badge= "MEETING ROOM"
+        title= "Temukan Ruang Meeting yang Tepat untuk Bisnis Anda"
+        description=
+        "Pilih ruang meeting profesional di lokasi strategis dengan fasilitas lengkap untuk presentasi, diskusi tim, interview, maupun pertemuan bersama klien."
+
         />
 
         <CategoryFilter
-          categories={categories}
+          categories={meetingRoomCategories}
           activeCategory={activeCategory}
           onChange={setActiveCategory}
         />
