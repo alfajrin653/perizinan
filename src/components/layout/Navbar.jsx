@@ -87,9 +87,9 @@ export default function Navbar() {
           {/* DESKTOP NAVIGATION (md ke atas)                          */}
           {/* ======================================================== */}
           <nav className='hidden md:flex items-center gap-6'>
-            {/* <a href='#' className='text-sm font-medium hover:text-blue-600 transition-colors'>
+            <a href='/find-location' className='text-sm font-medium hover:text-blue-600 transition-colors'>
               Cari Lokasi
-            </a> */}
+            </a>
 
             {/* Mega Menu Dropdown (Desktop) */}
             <div className='relative group py-4'>
@@ -191,11 +191,11 @@ export default function Navbar() {
           <ul className='space-y-2'>
             <li>
               <a
-                href='/'
+                href='/Find-location'
                 className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
                 onClick={() => setOpen(false)}
               >
-                OneStop Business Hub
+                Cari Lokasi
               </a>
             </li>
 

@@ -23,6 +23,7 @@ import VirtualOfficeDetail from "./pages/VirtualOffice/VirtualOfficeDetail";
 import RoomMeetDetail from "./pages/VirtualOffice/RoomMeetDetail";
 import CoworkingDetails from "./pages/VirtualOffice/CoworkingDetails";
 import TentangKami from "./pages/TentangKami";
+import FindLocation from "./pages/FindLocation";
 
 
 export default function App() {
@@ -52,6 +53,7 @@ export default function App() {
 
 
             <Route path="/Podcast-studio" element={<PodcastStudio />} />
+            <Route path="find-location" element={<FindLocation />} />
 
             <Route path="/coworking-space">
               <Route index element={<CoworkingSpace />} />
