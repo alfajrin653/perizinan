@@ -90,6 +90,9 @@ export default function Navbar() {
             <a href='/find-location' className='text-sm font-medium hover:text-blue-600 transition-colors'>
               Cari Lokasi
             </a>
+        <a href='/promo' className='text-sm font-medium hover:text-blue-600 transition-colors'>
+              Promo
+            </a>
 
             {/* Mega Menu Dropdown (Desktop) */}
             <div className='relative group py-4'>
@@ -196,6 +199,15 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
               >
                 Cari Lokasi
+              </a>
+            </li>
+            <li>
+              <a
+                href='/promo'
+                className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
+                onClick={() => setOpen(false)}
+              >
+                Promo
               </a>
             </li>
 

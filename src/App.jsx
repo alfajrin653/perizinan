@@ -24,6 +24,7 @@ import RoomMeetDetail from "./pages/VirtualOffice/RoomMeetDetail";
 import CoworkingDetails from "./pages/VirtualOffice/CoworkingDetails";
 import TentangKami from "./pages/TentangKami";
 import FindLocation from "./pages/FindLocation";
+import PromoPages from "./pages/PromoPages";
 
 
 export default function App() {
@@ -73,6 +74,7 @@ export default function App() {
             <Route path="/visa-turis" element={<VisaTuris/>} />
             <Route path="/hubungi-kami" element={<HubungiKami  />} />
             <Route path="/tentang-kami" element={<TentangKami />} /> 
+            <Route path="/promo" element={<PromoPages />} />
             {/* Error page */}
             <Route path="*" element={<div><div class="flex flex-col items-center justify-center text-sm max-md:px-4 py-20">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "promo-1",
+    "title": "Bundle Pendirian PT + Virtual Office",
+    "description": "Mulai bisnis Anda dengan mudah! Dapatkan potongan harga khusus untuk paket lengkap pendirian PT beserta sewa Virtual Office selama 1 Tahun.",
+    "discount": "Diskon 25%",
+    "validUntil": "31 Agustus 2026",
+    "category": "Legalitas & VO",
+    "promoCode": "MULAIUSAHA25",
+    "theme": "bg-blue-600 text-white",
+    "btnTheme": "bg-white text-blue-600 hover:bg-slate-100",
+    "link": "/pendirian-pt"
+  },
+  {
+    "id": "promo-2",
+    "title": "Flash Sale Meeting Room SCBD",
+    "description": "Nikmati fasilitas ruang pertemuan premium dengan harga lebih hemat. Cocok untuk presentasi klien atau rapat internal perusahaan.",
+    "discount": "Potongan Rp 500rb",
+    "validUntil": "15 Agustus 2026",
+    "category": "Fasilitas",
+    "promoCode": "MEETINGSBD",
+    "theme": "bg-slate-800 text-white",
+    "btnTheme": "bg-blue-500 text-white hover:bg-blue-400",
+    "link": "/Room-meet"
+  },
+  {
+    "id": "promo-3",
+    "title": "Hari kemerdekaan",
+    "description": "Paket lengkap pendirian PT beserta sewa Virtual Office selama 1 Tahun. Diskon 25%.",
+    "discount": "Diskon 25%",
+    "validUntil": "31 Agustus 2026",
+    "category": "Legalitas & VO",
+    "promoCode": "MULAIUSAHA25",
+    "theme": "bg-blue-600 text-white",
+    "btnTheme": "bg-white text-blue-600 hover:bg-slate-100",
+    "link": "/pendirian-pt"
+  }
+]
