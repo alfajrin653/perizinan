@@ -1,66 +1,10 @@
-export const categories = [
-  "Semua",
-  "Jakarta Selatan",
-  "Jakarta Pusat",
-  "Tangerang Selatan",
-];
-
+/**
+ * src/data/locations.js
+ * Office location records
+ */
 export const locations = [
-  {
-    id: 1,
-
-    city: "Jakarta Selatan",
-
-    title: "Centennial Tower",
-
-    address:
-      "Jl. Jend. Gatot Subroto Kav 24-25, Jakarta Selatan",
-
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-
-    badge: "Jakarta Selatan",
-
-    features: [
-      "Virtual Office",
-      "Serviced Office",
-      "Meeting Room",
-    ],
-
-    pricing: {
-      price: "Rp 299.000",
-      period: "/bulan",
-    },
-
-    link: "/centennial-tower",
-  },
-
-  {
-    id: 2,
-
-    city: "Tangerang Selatan",
-
-    title: "Green Office Park",
-
-    address:
-      "BSD Green Office Park, Tangerang Selatan",
-
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
-
-    badge: "Tangerang Selatan",
-
-    features: [
-      "Virtual Office",
-      "Coworking Space",
-      "Event Space",
-    ],
-
-    pricing: {
-      price: "Rp 250.000",
-      period: "/bulan",
-    },
-
-    link: "/green-office-park",
-  },
+  { country: 'Indonesia', flag: 'ID', building: 'Centennial Tower, Jakarta Selatan', phone: '021-29 222 999', image: 'https://picsum.photos/400/300?random=21' },
+  { country: 'Malaysia', flag: 'MY', building: 'Plaza Mont Kiara', phone: '+603 2788 3555', image: 'https://picsum.photos/400/300?random=22' },
+  { country: 'Filipina', flag: 'PH', building: 'Fort Legend Tower Level 10-1', phone: '+632 3224 2000', image: 'https://picsum.photos/400/300?random=23' },
+  { country: 'Thailand', flag: 'TH', building: '30 Sukhumvit Soi.61, Bangkok', phone: '+662 036 0666', image: 'https://picsum.photos/400/300?random=24' },
 ];
