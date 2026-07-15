@@ -5,16 +5,16 @@ export const categories = ["Semua", "Jakarta Selatan", "Jakarta Pusat", "Jakarta
 export const locations = [
   {
     id: 1,
-    city: "Jakarta Selatan", // Akan masuk ke prop 'badge' dan jadi acuan filter
-    title: "Menara Rajawali Coworking", // Akan masuk ke prop 'title'
-    address: "Jl. Dr. Ide Anak Agung Gde Agung Lot 5.1, Kawasan Mega Kuningan", // Akan masuk ke prop 'description'
+    city: "Jakarta Pusat", // Akan masuk ke prop 'badge' dan jadi acuan filter
+    title: "Menara GRAND KEBON SIRIH", // Akan masuk ke prop 'title'
+    address: " Jl. Kebon Sirih No.35 14, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340", // Akan masuk ke prop 'description'
     image: "/images/coworking-rajawali.jpg",
     features: ["High-Speed WiFi", "Free Coffee & Tea", "Lounge Area"],
     pricing: {
       price: "Rp 150.000",
       period: "/ hari"
     },
-    link: "/coworking/menara-rajawali"
+    link: "/coworking/menara-Grand-Kebun_sirih"
   },
   {
     id: 2,

@@ -8,13 +8,13 @@ export const categories = [
 export const locations = [
   {
     id: 1,
-    city: "Jakarta Selatan",
-    title: "Centennial Tower",
+    city: "Jakarta Pusat",
+    title: "Grand Kebun Sirih",
     address:
-      "Jl. Jend. Gatot Subroto Kav 24-25, Jakarta Selatan",
+      "Jl Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-    badge: "Jakarta Selatan",
+    badge: "Jakarta Pusat",
     features: [
       "Virtual Office",
       "Serviced Office",
@@ -30,17 +30,45 @@ export const locations = [
   {
     id: 2,
 
-    city: "Tangerang Selatan",
+    city: "Jakarta Pusat",
 
-    title: "Green Office Park",
+    title: "Grand Kebun Sirih",
 
     address:
-      "BSD Green Office Park, Tangerang Selatan",
+      "Jl. Kebon Sirih No.35 14 Lt9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
 
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
 
-    badge: "Tangerang Selatan",
+    badge: "Jakarta Pusat",
+
+    features: [
+      "Virtual Office",
+      "Coworking Space",
+      "Event Space",
+    ],
+
+    pricing: {
+      price: "Rp 250.000",
+      period: "/bulan",
+    },
+
+    link: "/green-office-park",
+  },
+  {
+    id: 3,
+
+    city: "Jakarta Pusat",
+
+    title: "Grand Kebun Sirih",
+
+    address:
+      "Jl. Kebon Sirih No.35 14 Lt9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+
+    badge: "Jakarta Pusat",
 
     features: [
       "Virtual Office",

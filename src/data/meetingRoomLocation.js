@@ -4,6 +4,7 @@ export const meetingRoomCategories = [
   "Jakarta Barat",
   "Jakarta Timur",
   "Jakarta Utara",
+  "Jakarta Pusat",
   "Tangerang",
   "Bekasi",
   "Bandung",
@@ -16,14 +17,14 @@ export const meetingRooms = [
   {
     id: 1,
 
-    city: "Jakarta Selatan",
+    city: "Jakarta Pusat",
 
-    title: "Centennial Tower",
+    title: "Grand Kebun Sirih",
 
     badge: "Meeting Room",
 
     address:
-      "Jl. Jend. Gatot Subroto Kav. 24-25, Jakarta Selatan",
+      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
 
     image:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
@@ -48,14 +49,14 @@ export const meetingRooms = [
   {
     id: 2,
 
-    city: "Jakarta Selatan",
+    city: "Jakarta Pusat",
 
-    title: "Office 8",
+    title: "Grand Kebun Sirih",
 
     badge: "Meeting Room",
 
     address:
-      "SCBD, Senopati, Jakarta Selatan",
+      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
 
     image:
       "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1200&auto=format&fit=crop",
@@ -79,14 +80,14 @@ export const meetingRooms = [
   {
     id: 3,
 
-    city: "Jakarta Selatan",
+   city: "Jakarta Pusat",
 
-    title: "The CEO Building",
+    title: "Grand Kebun Sirih",
 
     badge: "Meeting Room",
 
     address:
-      "TB Simatupang, Jakarta Selatan",
+      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
 
     image:
       "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
@@ -110,14 +111,14 @@ export const meetingRooms = [
   {
     id: 4,
 
-    city: "Tangerang",
+city: "Jakarta Pusat",
 
-    title: "MyRepublic Plaza",
+    title: "Grand Kebun Sirih",
 
     badge: "Meeting Room",
 
     address:
-      "BSD Green Office Park, Tangerang",
+      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
 
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
@@ -138,64 +139,5 @@ export const meetingRooms = [
     link: "/meeting-room/myrepublic-plaza",
   },
 
-  {
-    id: 5,
-
-    city: "Bandung",
-
-    title: "Gedung Menara BRI",
-
-    badge: "Meeting Room",
-
-    address:
-      "Asia Afrika, Bandung",
-
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
-
-    pricing: {
-      price: "Rp166.500",
-      period: "/jam",
-    },
-
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Coffee & Tea",
-      "Smart TV",
-    ],
-
-    link: "/meeting-room/bri-bandung",
-  },
-
-  {
-    id: 6,
-
-    city: "Bali",
-
-    title: "Promenade Shop",
-
-    badge: "Meeting Room",
-
-    address:
-      "Canggu, Bali",
-
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
-
-    pricing: {
-      price: "Rp388.500",
-      period: "/jam",
-    },
-
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Coffee & Tea",
-      "Air Conditioner",
-      "Smart TV",
-    ],
-
-    link: "/meeting-room/promenade-shop",
-  },
+  
 ];
