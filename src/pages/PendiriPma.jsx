@@ -98,7 +98,7 @@ export default function PendirianPma() {
         badge="FOREIGN DIRECT INVESTMENT"
         title="Jasa Pendirian PT PMA Profesional di Indonesia"
         description="Buka peluang bisnis tanpa batas di pasar Indonesia. Kami membantu investor asing mendirikan PT PMA dengan proses yang aman, transparan, dan sepenuhnya mematuhi regulasi BKPM."
-        imageSrc="/images/pma-hero.jpg" // Ganti dengan gambar ilustrasi gedung/investasi/global
+        imageSrc="../public/img/pendirian-pt.png" // Ganti dengan gambar ilustrasi gedung/investasi/global
         statsValue="10 Miliar"
         statsLabel="Minimum Syarat Investasi"
         features={pmaHeroFeatures}

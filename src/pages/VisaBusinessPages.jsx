@@ -111,7 +111,7 @@ export default function VisaBusinesspages() {
         badge="LAYANAN EKSPATRIAT / VISA"
         title="Urus Visa Bisnis Indonesia Tanpa Hambatan"
         description="Perlancar aktivitas komersial dan investasi Anda di Indonesia. Kami menyediakan layanan pengurusan Visa Bisnis yang cepat, aman, dan mematuhi seluruh regulasi imigrasi yang berlaku."
-        imageSrc="/images/visa-bisnis-hero.jpg" // Ganti dengan gambar ilustrasi paspor/airport/bisnis
+        imageSrc="../public/img/VisaBusiness.jpg" // Ganti dengan gambar ilustrasi paspor/airport/bisnis
         statsValue="100%"
         statsLabel="Bantuan Surat Sponsor"
         features={visaHeroFeatures}

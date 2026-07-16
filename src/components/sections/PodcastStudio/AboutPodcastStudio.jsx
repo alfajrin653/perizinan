@@ -19,8 +19,8 @@ export default function AboutPodcastStudio() {
       statsValue="Pro"
       statsLabel="Studio Equipment"
       features={podcastFeatures}
-      buttonText="Choose Plan"  // <-- Teks tombol yang diminta
-      buttonLink="/pricing-podcast" // <-- Sesuaikan dengan link tujuan
+      // buttonText="Choose Plan"  // <-- Teks tombol yang diminta
+      // buttonLink="/pricing-podcast" // <-- Sesuaikan dengan link tujuan
     />
   );
 }

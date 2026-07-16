@@ -10,6 +10,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import CoworkingLocations from "../components/sections/coworking/CoworkingLocations";
+import CompanyPackageCard from"../components/element/PricingPembuatan";
 
 export default function CoworkingSpace() {
   // Data Fasilitas
@@ -25,25 +26,25 @@ export default function CoworkingSpace() {
   // Data Paket Harga
   const pricingPlans = [
     {
-      name: "Daily Pass",
+      title: "Daily Pass",
       price: "Rp 150.000",
       period: "/ hari",
-      desc: "Cocok untuk pekerja lepas atau pekerja remote yang butuh ruang kerja sementara.",
+      badge: "Cocok untuk pekerja lepas atau pekerja remote yang butuh ruang kerja sementara.",
       features: ["Akses 1 Hari Kerja (08:00 - 18:00)", "High Speed Internet", "Free Flow Kopi & Teh", "Akses Area Lounge"],
       popular: false,
     },
     {
-      name: "Monthly Pass (Hot Desk)",
+      title: "Monthly Pass (Hot Desk)",
       price: "Rp 1.500.000",
-      period: "/ bulan",
+      badge: "/ bulan",
       desc: "Pilihan fleksibel untuk bekerja di lokasi vOffice mana saja setiap hari.",
       features: ["Akses ke semua lokasi Coworking vOffice", "High Speed Internet", "Gratis Print & Scan", "Diskon Sewa Meeting Room", "Akses Komunitas Eksklusif"],
       popular: true,
     },
     {
-      name: "Dedicated Desk",
+      title: "Dedicated Desk",
       price: "Rp 2.500.000",
-      period: "/ bulan",
+      badge: "/ bulan",
       desc: "Meja kerja khusus milik Anda sendiri tanpa perlu bergantian dengan orang lain.",
       features: ["Meja Kerja Pribadi yang Tetap", "Loker Pribadi", "Bebas Pakai Alamat Bisnis (VO)", "Kuota Meeting Room Gratis", "Akses 24/7 (Lokasi Tertentu)"],
       popular: false,
@@ -77,7 +78,7 @@ export default function CoworkingSpace() {
             {/* Hero Image */}
             <div className="relative">
               <img
-                src="/images/coworking-hero.jpg" // Ganti dengan image coworking Anda
+                src="../public/img/coworking.jpg" // Ganti dengan image coworking Anda
                 alt="Coworking Space vOffice"
                 className="rounded-3xl object-cover w-full h-[500px] shadow-2xl"
               />
@@ -120,7 +121,7 @@ export default function CoworkingSpace() {
       </section>
 
       {/* SECTION 3: PAKET HARGA */}
-      <section className="py-24 bg-slate-900 text-white rounded-t-[3rem]">
+      <section className="py-24 text-slate-900 bg-white rounded-t-[3rem]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -133,7 +134,7 @@ export default function CoworkingSpace() {
 
 
 {/* nanti procing ini di ganti pakai komponent pricing */}
-          <div className="grid lg:grid-cols-3 gap-8">  
+          {/* <div className="grid lg:grid-cols-3 gap-8">  
             {pricingPlans.map((plan, index) => (
               <div 
                 key={index} 
@@ -175,9 +176,23 @@ export default function CoworkingSpace() {
                 </button>
               </div>
             ))}
-          </div>
+          </div> */}
   
-
+<div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {pricingPlans.map((pkg, index) => (
+              <CompanyPackageCard
+                key={index}
+                name={pkg.title}
+                price={pkg.price}
+                badge={pkg.badge}
+                featured={pkg.featured}
+                features={pkg.features}
+                bonuses={pkg.bonuses}
+                buttonText="Pilih Paket"
+                buttonLink="/pendirian-cv"
+              />
+            ))}
+          </div>
         </div>
       </section>
 {/* LOKASI COWORKING */}

@@ -47,42 +47,43 @@ export default function InternationalSetup() {
     }
   ];
 
+  const waNumber = "6281234567890";
+
   // ==========================================
-  // 3. DATA NEGARA (COUNTRIES)
+  // DATA NEGARA (COUNTRIES) DENGAN WEB IMAGES
   // ==========================================
   const countries = [
     {
       name: "Singapura",
-      image: "/images/singapore.jpg", // Ganti dengan gambar landmark Singapura
+      image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1000&auto=format&fit=crop",
       highlights: ["Pusat Bisnis Asia", "Pajak Perusahaan Rendah", "Reputasi Global Sangat Baik"],
       desc: "Gerbang utama menuju pasar Asia dengan sistem birokrasi yang sangat efisien dan ramah terhadap investor asing."
     },
     {
       name: "Hong Kong",
-      image: "/images/hongkong.jpg", // Ganti dengan gambar landmark Hong Kong
+      image: "https://images.unsplash.com/photo-1513622470522-26c3115456ac?q=80&w=1000&auto=format&fit=crop",
       highlights: ["Gerbang ke Tiongkok", "Bebas Pajak Offshore", "Pusat Keuangan Global"],
       desc: "Cocok untuk bisnis perdagangan internasional dengan sistem perpajakan teritorial (tanpa pajak untuk pendapatan dari luar Hong Kong)."
     },
     {
       name: "Dubai (UAE)",
-      image: "/images/dubai.jpg", // Ganti dengan gambar landmark Dubai
+      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1000&auto=format&fit=crop",
       highlights: ["Kawasan Free Zone", "Bebas Pajak Penghasilan", "Pusat Bisnis Timur Tengah"],
       desc: "Tingkatkan prestise bisnis Anda dengan mendirikan perusahaan di kawasan bebas pajak (Free Zone) dengan 100% kepemilikan asing."
     },
     {
-      name: "British Virgin Islands (BVI)",
-      image: "/images/bvi.jpg", // Ganti dengan gambar kepulauan BVI
+      name: "British Virgin Islands",
+      image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=1000&auto=format&fit=crop",
       highlights: ["Privasi Tinggi", "Bebas Pajak 100%", "Setup Sangat Cepat"],
       desc: "Yurisdiksi offshore paling populer di dunia, ideal untuk holding company, perlindungan aset, dan efisiensi pajak."
     },
     {
       name: "Malaysia (Labuan)",
-      image: "/images/malaysia.jpg", // Ganti dengan gambar Malaysia/Labuan
+      image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f0a?q=80&w=1000&auto=format&fit=crop",
       highlights: ["Biaya Setup Terjangkau", "Pajak 3% (Trading)", "100% Kepemilikan Asing"],
       desc: "Pilihan strategis untuk perusahaan berorientasi ekspor dan teknologi yang ingin masuk ke pasar ASEAN dengan biaya rasional."
     }
   ];
-
   // ==========================================
   // 4. DATA FAQ
   // ==========================================
@@ -117,7 +118,7 @@ export default function InternationalSetup() {
         badge="GLOBAL BUSINESS GATEWAY"
         title="Ekspansi Bisnis Anda ke Kancah Internasional"
         description="Buka dan miliki perusahaan di luar negeri dengan mudah tanpa harus pindah atau berdomisili di sana. Kami mengurus seluruh legalitas, perizinan, hingga pembukaan rekening bank korporat global untuk Anda."
-        imageSrc="/images/international-setup-hero.jpg" // Ganti dengan gambar ilustrasi globe/bisnis
+        imageSrc="../public/img/internasional.png" // Ganti dengan gambar ilustrasi globe/bisnis
         statsValue="100%"
         statsLabel="Proses Online & Remote"
         features={internationalHeroFeatures}
@@ -159,24 +160,35 @@ export default function InternationalSetup() {
 
       {/* 3. NEGARA PILIHAN SECTION */}
       <section className="py-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Pilihan Yurisdiksi Bisnis Global
-            </h2>
-            <p className="text-slate-600">
-              Pilih negara yang paling menguntungkan untuk model bisnis Anda. Dari pusat keuangan Asia hingga kawasan bebas pajak di Timur Tengah.
-            </p>
-          </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Pilihan Yurisdiksi Bisnis Global
+          </h2>
+          <p className="text-slate-600">
+            Pilih negara yang paling menguntungkan untuk model bisnis Anda. Dari pusat keuangan Asia hingga kawasan bebas pajak di Timur Tengah.
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {countries.map((country, index) => (
+        {/* Grid Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {countries.map((country, index) => {
+            // Encode pesan WhatsApp agar spasi dan karakter khusus terbaca oleh URL
+            const waMessage = encodeURIComponent(`Halo, saya tertarik untuk konsultasi mengenai pendirian bisnis di ${country.name}. Mohon informasinya.`);
+            const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
+
+            return (
               <div key={index} className="group bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col">
+                
+                {/* Image Section */}
                 <div className="relative h-56 overflow-hidden">
                   <img 
                     src={country.image} 
                     alt={country.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-slate-900 shadow-sm flex items-center gap-2">
                     <MapPin size={16} className="text-blue-600" />
@@ -184,6 +196,7 @@ export default function InternationalSetup() {
                   </div>
                 </div>
                 
+                {/* Content Section */}
                 <div className="p-8 flex flex-col flex-grow">
                   <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
                     {country.desc}
@@ -198,15 +211,22 @@ export default function InternationalSetup() {
                     ))}
                   </div>
                   
-                  <button className="mt-8 w-full bg-slate-50 text-blue-600 font-bold py-3 rounded-xl border border-blue-100 hover:bg-blue-600 hover:text-white transition-colors duration-300">
-                    Pelajari Selengkapnya
-                  </button>
+                  {/* WhatsApp Button */}
+                  <a 
+                    href={waLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-8 flex justify-center items-center gap-2 w-full bg-slate-50 text-blue-600 font-bold py-3 rounded-xl border border-blue-100 hover:bg-green-500 hover:text-white hover:border-green-500 transition-colors duration-300"
+                  >
+                    Konsultasi via WhatsApp
+                  </a>
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* 4. FAQ SECTION */}
       <FAQ 

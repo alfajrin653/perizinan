@@ -12,6 +12,7 @@ import {
   Search, FileSignature, Briefcase, CreditCard,
   IdCard, FileText, Image as ImageIcon, MapPin, Users
 } from "lucide-react";
+import FaqPembuatanCV from "../components/sections/PembuatanCv/FaqPembuatanCv";
 // import Persyaratan from "../components/sections/pembuatanPt/Persyaratan";
 
 export default function PendirianCV() {
@@ -107,6 +108,37 @@ export default function PendirianCV() {
     },
   ];
 
+  // ==========================================
+// 1. DATA FAQ KHUSUS PEMBUATAN CV
+// ==========================================
+const faqData = [
+  {
+    question: "Apa perbedaan utama mendirikan CV dibandingkan dengan PT?",
+    answer: "Perbedaan utamanya ada pada status hukum dan modal. CV bukan merupakan badan hukum murni seperti PT, sehingga tidak ada pemisahan mutlak antara kekayaan pribadi dan kekayaan perusahaan. Namun, kelebihannya adalah proses pendirian CV jauh lebih cepat, biayanya lebih murah, dan sistem pengambilan keputusannya lebih fleksibel."
+  },
+  {
+    question: "Apakah ada syarat minimal modal awal untuk membuat CV?",
+    answer: "Tidak ada syarat batas minimal modal dasar yang ditetapkan oleh undang-undang untuk pendirian CV. Besaran modal disetor sepenuhnya ditentukan dan disepakati oleh para pendiri (Sekutu Aktif dan Sekutu Pasif) sesuai dengan kebutuhan awal operasional bisnis."
+  },
+  {
+    question: "Siapa saja yang dibutuhkan untuk mendirikan CV?",
+    answer: "CV minimal harus didirikan oleh 2 (dua) orang Warga Negara Indonesia (WNI). Satu orang akan bertindak sebagai Sekutu Aktif (Direktur yang menjalankan operasional perusahaan) dan satu orang lagi sebagai Sekutu Pasif (Komanditer yang hanya menyetorkan modal)."
+  },
+  {
+    question: "Dokumen apa saja yang harus saya siapkan?",
+    answer: "Persyaratannya cukup sederhana. Anda hanya perlu menyiapkan e-KTP, NPWP Pribadi, KK (Kartu Keluarga) dari seluruh pendiri, pas foto direktur, serta detail informasi perusahaan seperti nama CV, alamat, bidang usaha, dan proporsi pembagian modal."
+  },
+  {
+    question: "Berapa lama estimasi waktu penyelesaian legalitas CV?",
+    answer: "Secara umum, jika seluruh dokumen persyaratan sudah lengkap dan divalidasi, proses pengurusan Akta Notaris, SK Kemenkumham, NPWP Perusahaan, hingga NIB (Nomor Induk Berusaha) memakan waktu sekitar 3 hingga 7 hari kerja."
+  },
+  {
+    question: "Apakah saya bisa menggunakan alamat rumah untuk alamat domisili CV?",
+    answer: "Sesuai dengan peraturan tata kota (terutama di wilayah Jakarta dan kota besar lainnya), rumah tinggal tidak diizinkan untuk dijadikan domisili perusahaan. Solusi terbaik dan paling hemat adalah dengan menyewa layanan Virtual Office kami yang sudah berstatus zonasi komersial."
+  }
+];
+
+
   return (
     <div className="w-full bg-white">
       
@@ -115,7 +147,7 @@ export default function PendirianCV() {
         badge="LEGALITAS BISNIS"
         title="Jasa Pendirian CV Mudah, Cepat & Hemat"
         description="Solusi legalitas yang tepat untuk usaha menengah dan berkembang. Dirikan CV Anda dengan proses yang lebih sederhana dan biaya yang lebih terjangkau, sudah termasuk fasilitas Virtual Office."
-        imageSrc="/images/pendirian-cv.jpg" // Ganti dengan gambar CV Anda
+        imageSrc="../public/img/Pembuatan-Cv.jpg" // Ganti dengan gambar CV Anda
         statsValue="100%"
         statsLabel="Legal & Terdaftar Kemenkumham"
         features={cvHeroFeatures}
@@ -163,7 +195,7 @@ export default function PendirianCV() {
 
         </div>
       </section>
-
+      <FaqPembuatanCV/>
     </div>
   );
 }

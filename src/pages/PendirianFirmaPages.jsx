@@ -167,7 +167,7 @@ export default function PendirianFirma() {
         badge="LEGALITAS BISNIS"
         title="Jasa Pendirian Firma Mudah, Aman & Terpercaya"
         description="Wujudkan kerja sama bisnis Anda dengan legalitas badan usaha Firma yang diakui negara. Cocok untuk persekutuan profesi dan kemitraan erat, sudah termasuk fasilitas Virtual Office."
-        imageSrc="/images/pendirian-firma.jpg" // Ganti dengan gambar yang relevan (misal: orang bersalaman/meeting)
+        imageSrc="../public/img/pendirian-firma.jpg" // Ganti dengan gambar yang relevan (misal: orang bersalaman/meeting)
         statsValue="100%"
         statsLabel="Legal & Terdaftar Kemenkumham"
         features={firmaHeroFeatures}

@@ -137,7 +137,7 @@ export default function CallCenterPages() {
         badge="LAYANAN BISNIS / CALL ANSWERING"
         title="Tingkatkan Citra Profesional Bisnis Anda"
         description="Jangan lewatkan satu pun panggilan penting. Resepsionis profesional kami siap menjawab telepon masuk menggunakan nama perusahaan Anda, menyambungkan panggilan, dan mencatat pesan untuk Anda."
-        imageSrc="/images/call-answering-hero.jpg" // Ganti dengan gambar resepsionis/telepon kantor
+        imageSrc="../public/img/call.jpeg" // Ganti dengan gambar resepsionis/telepon kantor
         statsValue="100%"
         statsLabel="Panggilan Terjawab Profesional"
         features={callHeroFeatures}

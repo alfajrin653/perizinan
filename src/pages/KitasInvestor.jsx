@@ -112,7 +112,7 @@ export default function KitasInvestor() {
         badge="LAYANAN EKSPATRIAT / KITAS"
         title="KITAS Investor: Solusi Izin Tinggal Bisnis Anda"
         description="Dapatkan izin tinggal resmi (1 atau 2 tahun) khusus bagi penanam modal asing di Indonesia. Nikmati keistimewaan tanpa perlu membayar pajak TKA dan tanpa proses RPTKA yang panjang."
-        imageSrc="/images/kitas-investor-hero.jpg" // Ganti dengan gambar ilustrasi paspor/investor
+        imageSrc="../public/img/kitas.jpg" // Ganti dengan gambar ilustrasi paspor/investor
         statsValue="100%"
         statsLabel="Kepatuhan Imigrasi"
         features={kitasHeroFeatures}

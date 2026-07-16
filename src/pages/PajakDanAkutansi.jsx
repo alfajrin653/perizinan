@@ -137,7 +137,7 @@ export default function PajakDanAkuntansi() {
         badge="PAJAK & AKUNTANSI"
         title="Fokus Pada Bisnis Anda, Biarkan Kami Urus Keuangannya"
         description="Hindari denda pajak dan laporan keuangan yang berantakan. Tim akuntan dan konsultan pajak profesional kami siap memastikan bisnis Anda patuh hukum dan terkontrol secara finansial."
-        imageSrc="/images/tax-accounting-hero.jpg" // Ganti dengan gambar ilustrasi akuntan/kalkulator
+        imageSrc="../public/img/Pajakakutansi.jpg" // Ganti dengan gambar ilustrasi akuntan/kalkulator
         statsValue="100%"
         statsLabel="Kepatuhan Regulasi DJP"
         features={taxHeroFeatures}

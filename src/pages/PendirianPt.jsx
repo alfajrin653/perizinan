@@ -61,7 +61,7 @@ export default function PembuatanPT() {
         badge="LEGALITAS BISNIS"
         title="Jasa Pembuatan PT Cepat, Mudah & Terpercaya"
         description="Mulai langkah bisnis Anda dengan legalitas yang sah. Kami mengurus seluruh dokumen pendirian PT Anda plus memberikan fasilitas Virtual Office di lokasi prestisius."
-        imageSrc="/images/pendirian-pt.jpg" // Sesuaikan dengan folder public Anda
+        imageSrc="../public/img/pendirian-pt.png" // Sesuaikan dengan folder public Anda
         statsValue="100%"
         statsLabel="Legal & Sesuai Regulasi"
         features={ptFeatures}

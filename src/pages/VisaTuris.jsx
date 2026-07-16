@@ -108,7 +108,7 @@ export default function VisaTuris() {
         badge="LAYANAN EKSPATRIAT / VISA TURIS"
         title="Pengurusan Visa Turis Indonesia (B211A) Praktis & Cepat"
         description="Nikmati keindahan alam Indonesia atau lakukan kunjungan keluarga tanpa repot memikirkan birokrasi. Kami bantu pengurusan Visa Kunjungan Wisata (B211A) Anda dengan proses yang aman, legal, dan transparan."
-        imageSrc="/images/visa-turis-hero.jpg" // Ganti dengan gambar ilustrasi liburan/wisata
+        imageSrc="../public/img/visaturis.png" // Ganti dengan gambar ilustrasi liburan/wisata
         statsValue="60 Hari"
         statsLabel="Masa Tinggal Awal"
         features={turisHeroFeatures}

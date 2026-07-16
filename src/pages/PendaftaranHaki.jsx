@@ -9,10 +9,48 @@ import FAQ from "../components/element/FAQ"; // import komponen FAQ dari src/com
 import { 
   ShieldCheck, Search, FileBadge, Scale, 
   FileSignature, Upload, Megaphone, Award,
-  IdCard, Image as ImageIcon, Briefcase, FileText, CheckCircle2
+  IdCard, Image as ImageIcon, Briefcase, FileText, CheckCircle2 , TrendingUp, AlertTriangle
 } from "lucide-react";
 
 export default function PendaftaranHaki() {
+
+  // ==========================================
+// 1. DATA ALASAN PENTINGNYA HAKI
+// ==========================================
+const reasons = [
+  {
+    id: 1,
+    title: "Perlindungan Hukum Eksklusif",
+    description: "Mendapatkan hak eksklusif dari negara. Hanya Anda yang berhak menggunakan merek tersebut untuk tujuan komersial, dan Anda berhak melarang pihak lain menggunakan merek yang sama.",
+    icon: ShieldCheck,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100",
+  },
+  {
+    id: 2,
+    title: "Mencegah Pembajakan & Plagiarisme",
+    description: "Tanpa pendaftaran resmi, siapa pun bisa mendaftarkan nama bisnis Anda lebih dulu. Jika itu terjadi, Anda justru bisa dituntut dan dipaksa mengganti nama bisnis yang sudah Anda bangun susah payah.",
+    icon: AlertTriangle,
+    color: "text-red-600",
+    bgColor: "bg-red-100",
+  },
+  {
+    id: 3,
+    title: "Meningkatkan Nilai Aset Perusahaan",
+    description: "Merek yang terdaftar adalah aset tidak berwujud yang memiliki nilai ekonomi. Merek tersebut dapat diwariskan, dilisensikan (franchise), atau bahkan diperjualbelikan.",
+    icon: TrendingUp,
+    color: "text-green-600",
+    bgColor: "bg-green-100",
+  },
+  {
+    id: 4,
+    title: "Membangun Kepercayaan Konsumen",
+    description: "Merek yang memiliki simbol ® (Registered) memberikan kesan profesional dan kredibel. Konsumen akan lebih percaya dan merasa aman bertransaksi dengan bisnis Anda.",
+    icon: Award,
+    color: "text-amber-600",
+    bgColor: "bg-amber-100",
+  }
+];
   
   // ==========================================
   // 1. DATA HERO SECTION (HAKI)
@@ -167,13 +205,66 @@ export default function PendaftaranHaki() {
         badge="HAK KEKAYAAN INTELEKTUAL"
         title="Lindungi Identitas Bisnis Anda dari Plagiarisme"
         description="Jangan biarkan nama, logo, atau ide brilian Anda dicuri kompetitor. Amankan masa depan bisnis Anda dengan mendaftarkan Merek dan Hak Cipta secara resmi di DJKI."
-        imageSrc="/images/haki-hero.jpg" // Ganti dengan gambar ilustrasi desain/legal/sertifikat
+        imageSrc="../public/img/haki.jpg" // Ganti dengan gambar ilustrasi desain/legal/sertifikat
         statsValue="10 Tahun"
         statsLabel="Masa Berlaku Perlindungan"
         features={hakiHeroFeatures}
         buttonText="Cek Merek Anda"
         buttonLink="/konsultasi"
       />
+
+      {/* 1.1 WHY HARUS DAFTAR HAKI? */}
+      <section className="py-24 px-4 bg-white relative overflow-hidden">
+      
+      {/* --- BACKGROUND ORNAMENT (Opsional untuk estetika) --- */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-50 -z-10 translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-slate-50 rounded-full blur-3xl opacity-50 -z-10 -translate-x-1/2 translate-y-1/2"></div>
+
+      <div className="max-w-7xl mx-auto">
+        
+        {/* --- HEADER SECTION --- */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
+            Kenapa Mendaftar Merek Itu <span className="text-blue-600">Penting?</span>
+          </h2>
+          <p className="text-lg text-slate-600">
+            Jangan biarkan identitas dan reputasi bisnis yang Anda bangun bertahun-tahun diambil alih oleh pihak lain. Amankan aset berharga Anda sekarang.
+          </p>
+        </div>
+
+        {/* --- GRID KONTEN --- */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {reasons.map((item) => {
+            const IconComponent = item.icon;
+            
+            return (
+              <div 
+                key={item.id} 
+                className="group flex gap-6 p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300"
+              >
+                {/* Bagian Ikon */}
+                <div className="shrink-0">
+                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center ${item.bgColor} group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className={`w-8 h-8 ${item.color}`} />
+                  </div>
+                </div>
+
+                {/* Bagian Teks */}
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
+    </section>
 
       {/* 2. PROSES PENDAFTARAN */}
       <ProcessTimeline 
