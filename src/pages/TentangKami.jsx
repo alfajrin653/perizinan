@@ -96,13 +96,13 @@ export default function TentangKami() {
             
             {/* Gambar Kiri */}
             <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
+              {/* <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img 
                   src="/images/vision-mission.jpg" // Ganti dengan gambar meeting / profesional
                   alt="Visi dan Misi" 
                   className="w-full h-auto object-cover"
                 />
-              </div>
+              </div> */}
               {/* Floating Element */}
               <div className="absolute -bottom-8 -right-8 bg-blue-600 text-white p-8 rounded-3xl shadow-xl hidden md:block">
                 <Target size={40} className="mb-4 opacity-80" />
@@ -203,7 +203,7 @@ export default function TentangKami() {
               Hubungi Tim Kami <ArrowRight size={20} />
             </a>
             <a 
-              href="/layanan" 
+              href="/" 
               className="bg-transparent border border-blue-400 text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-700 transition flex items-center justify-center"
             >
               Lihat Semua Layanan

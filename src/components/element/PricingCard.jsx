@@ -10,7 +10,7 @@ export default function PricingCard({
   featured,
 }) {
   // 1. Siapkan nomor WA dan pesan dinamis
-  const waNumber = "6281288888888"; // Ganti dengan nomor WA admin
+  const waNumber = "6282260100964"; // Ganti dengan nomor WA admin
   const waMessage = `Halo, saya tertarik dengan paket *${title}* seharga ${price} ${period}. Boleh minta informasi lebih lanjut?`;
   
   // 2. Encode URL agar aman (mengubah spasi menjadi format %20 dll)

@@ -10,7 +10,7 @@ export default function CompanyPackageCard({
   bonuses,
 }) {
   // 1. Siapkan nomor WA dan pesan dinamis berdasarkan 'title'
-  const waNumber = "6281288888888"; 
+  const waNumber = "6282260100964"; 
   const waMessage = `Halo, saya tertarik dengan paket *${title}* seharga ${price}. Boleh minta informasi lebih lanjut?`;
   
   // 2. Encode URL

@@ -80,7 +80,7 @@ export default function Navbar() {
         <div className='max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative'>
           {/* --- Logo --- */}
           <a href='/' className='text-lg font-semibold tracking-tight'>
-            OneStop <span className='font-bold text-blue-600'>Business Hub</span>
+            Duduk <span className='font-bold text-blue-600'>Manis</span>
           </a>
 
           {/* ======================================================== */}

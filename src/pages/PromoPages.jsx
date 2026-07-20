@@ -11,7 +11,7 @@ export default function PromoPages() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  const waNumber = "6281288888888";
+  const waNumber = "6282260100964";
 
   // Fungsi untuk mengambil data dari folder public tanpa build
   useEffect(() => {
