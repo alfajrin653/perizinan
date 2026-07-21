@@ -87,7 +87,7 @@ export default function MengapaKami() {
   }, []);
 
   return (
-    <section className='split-root'>
+    <section id='whyus' className='split-root'>
       <style>{`
         .split-root {
           --blue: #2547D0;

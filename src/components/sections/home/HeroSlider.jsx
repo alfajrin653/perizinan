@@ -504,7 +504,7 @@ export default function HeroLight() {
           <p className='hl-desc'>Kami menggabungkan layanan legalitas, ruang kerja profesional, hingga pengurusan administrasi asing ke dalam satu ekosistem yang dirancang untuk mempercepat pertumbuhan bisnis Anda.</p>
 
           <div className='hl-actions'>
-            <a href='/pendirian-pt' className='hl-btn-primary'>
+            <a href='#whyus' className='hl-btn-primary'>
               <svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
                 <polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon>
               </svg>

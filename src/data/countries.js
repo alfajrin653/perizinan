@@ -12,5 +12,5 @@ export const countries = [
   { name: 'China', flag: '🇨🇳', href: '#' },
   { name: 'Singapura', flag: '🇸🇬', href: '#' },
   { name: 'Vietnam', flag: '🇻🇳', href: '#' },
-  { name: 'Kamboja', flag: '🇰🇭', href: '#' }
-]
+  { name: 'Kamboja', flag: '🇰🇭', href: '#' },
+];

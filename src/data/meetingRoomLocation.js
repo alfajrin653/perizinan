@@ -1,143 +1,95 @@
-export const meetingRoomCategories = [
-  "Semua",
-  "Jakarta Selatan",
-  "Jakarta Barat",
-  "Jakarta Timur",
-  "Jakarta Utara",
-  "Jakarta Pusat",
-  "Tangerang",
-  "Bekasi",
-  "Bandung",
-  "Surabaya",
-  "Bali",
-  "Medan",
-];
+export const meetingRoomCategories = ['Semua', 'Jakarta Selatan', 'Jakarta Barat', 'Jakarta Timur', 'Jakarta Utara', 'Jakarta Pusat', 'Tangerang', 'Bekasi', 'Bandung', 'Surabaya', 'Bali', 'Medan'];
 
 export const meetingRooms = [
   {
     id: 1,
 
-    city: "Jakarta Pusat",
+    city: 'Jakarta Pusat',
 
-    title: "Grand Kebun Sirih",
+    title: 'Grand Kebun Sirih',
 
-    badge: "Meeting Room",
+    badge: 'Meeting Room',
 
-    address:
-      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+    address: ' Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340',
 
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop",
+    image: '/img/card/Roommeet1.jpeg',
 
     pricing: {
-      price: "Rp255.000",
-      period: "/jam",
+      price: 'Rp255.000',
+      period: '/jam',
     },
 
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Smart TV",
-      "Whiteboard",
-      "Coffee & Tea",
-      "Mineral Water",
-    ],
+    features: ['Wi-Fi', 'Projector', 'Smart TV', 'Whiteboard', 'Coffee & Tea', 'Mineral Water'],
 
-    link: "/meeting-room/centennial-tower",
+    link: '/meeting-room/centennial-tower',
   },
 
-  {
-    id: 2,
+  // {
+  //   id: 2,
 
-    city: "Jakarta Pusat",
+  //   city: 'Jakarta Pusat',
 
-    title: "Grand Kebun Sirih",
+  //   title: 'Grand Kebun Sirih',
 
-    badge: "Meeting Room",
+  //   badge: 'Meeting Room',
 
-    address:
-      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+  //   address: ' Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340',
 
-    image:
-      "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1200&auto=format&fit=crop",
+  //   image: '../img/card/Roommeet2.jpeg',
 
-    pricing: {
-      price: "Rp255.000",
-      period: "/jam",
-    },
+  //   pricing: {
+  //     price: 'Rp255.000',
+  //     period: '/jam',
+  //   },
 
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Smart TV",
-      "Coffee & Tea",
-      "Reception",
-    ],
+  //   features: ['Wi-Fi', 'Projector', 'Smart TV', 'Coffee & Tea', 'Reception'],
 
-    link: "/meeting-room/office-8",
-  },
+  //   link: '/meeting-room/office-8',
+  // },
 
-  {
-    id: 3,
+  // {
+  //   id: 3,
 
-   city: "Jakarta Pusat",
+  //   city: 'Jakarta Pusat',
 
-    title: "Grand Kebun Sirih",
+  //   title: 'Grand Kebun Sirih',
 
-    badge: "Meeting Room",
+  //   badge: 'Meeting Room',
 
-    address:
-      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+  //   address: ' Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340',
 
-    image:
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
+  //   image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop',
 
-    pricing: {
-      price: "Rp255.000",
-      period: "/jam",
-    },
+  //   pricing: {
+  //     price: 'Rp255.000',
+  //     period: '/jam',
+  //   },
 
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Smart TV",
-      "Whiteboard",
-      "Coffee & Tea",
-    ],
+  //   features: ['Wi-Fi', 'Projector', 'Smart TV', 'Whiteboard', 'Coffee & Tea'],
 
-    link: "/meeting-room/the-ceo-building",
-  },
+  //   link: '/meeting-room/the-ceo-building',
+  // },
 
-  {
-    id: 4,
+  // {
+  //   id: 4,
 
-city: "Jakarta Pusat",
+  //   city: 'Jakarta Pusat',
 
-    title: "Grand Kebun Sirih",
+  //   title: 'Grand Kebun Sirih',
 
-    badge: "Meeting Room",
+  //   badge: 'Meeting Room',
 
-    address:
-      " Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340",
+  //   address: ' Jl. Kebon Sirih No.35 14 Lt 9, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340',
 
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+  //   image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop',
 
-    pricing: {
-      price: "Rp255.000",
-      period: "/jam",
-    },
+  //   pricing: {
+  //     price: 'Rp255.000',
+  //     period: '/jam',
+  //   },
 
-    features: [
-      "Wi-Fi",
-      "Projector",
-      "Smart TV",
-      "Coffee & Tea",
-      "Printer & Scanner",
-    ],
+  //   features: ['Wi-Fi', 'Projector', 'Smart TV', 'Coffee & Tea', 'Printer & Scanner'],
 
-    link: "/meeting-room/myrepublic-plaza",
-  },
-
-  
+  //   link: '/meeting-room/myrepublic-plaza',
+  // },
 ];

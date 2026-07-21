@@ -70,13 +70,7 @@ export default function Navbar() {
       {/* ============================================================ */}
       {/* HEADER — berlaku untuk semua ukuran layar                     */}
       {/* ============================================================ */}
-      <header
-        className={`fixed w-full top-0 z-40 transition-all duration-300 ${
-          scrolled
-            ? 'bg-white/80 backdrop-blur-md shadow-md text-gray-800'
-            : 'bg-transparent text-gray-700'
-        }`}
-      >
+      <header className={`fixed w-full top-0 z-40 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-md text-gray-800' : 'bg-transparent text-gray-700'}`}>
         <div className='max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative'>
           {/* --- Logo --- */}
           <a href='/' className='text-lg font-semibold tracking-tight'>
@@ -90,7 +84,7 @@ export default function Navbar() {
             <a href='/find-location' className='text-sm font-medium hover:text-blue-600 transition-colors'>
               Cari Lokasi
             </a>
-        <a href='/promo' className='text-sm font-medium hover:text-blue-600 transition-colors'>
+            <a href='/promo' className='text-sm font-medium hover:text-blue-600 transition-colors'>
               Promo
             </a>
 
@@ -139,10 +133,7 @@ export default function Navbar() {
             {/* <div className='text-xs font-semibold tracking-wider text-gray-500 cursor-pointer'>
               <span className='text-blue-600 font-bold'>ID</span> | EN | CN
             </div> */}
-            <a
-              href='/hubungi-kami'
-              className='bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-sm'
-            >
+            <a href='/hubungi-kami' className='bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors shadow-sm'>
               Hubungi Kami
             </a>
           </div>
@@ -150,11 +141,7 @@ export default function Navbar() {
           {/* ======================================================== */}
           {/* MOBILE & TABLET — tombol hamburger (di bawah md)         */}
           {/* ======================================================== */}
-          <button
-            className='md:hidden p-2 text-current z-50'
-            onClick={() => setOpen(true)}
-            aria-label='Buka menu'
-          >
+          <button className='md:hidden p-2 text-current z-50' onClick={() => setOpen(true)} aria-label='Buka menu'>
             <Menu className='w-6 h-6' />
           </button>
         </div>
@@ -165,26 +152,13 @@ export default function Navbar() {
       {/* ============================================================ */}
 
       {/* Backdrop overlay gelap */}
-      <div
-        className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-50 transition-opacity duration-300 md:hidden ${
-          open ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
-        onClick={() => setOpen(false)}
-      ></div>
+      <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-50 transition-opacity duration-300 md:hidden ${open ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={() => setOpen(false)}></div>
 
       {/* Drawer panel */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-out md:hidden overflow-y-auto ${
-          open ? 'translate-x-0' : 'translate-x-full'
-        }`}
-      >
+      <div className={`fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-out md:hidden overflow-y-auto ${open ? 'translate-x-0' : 'translate-x-full'}`}>
         {/* Header drawer (tombol close) */}
         <div className='p-4 flex justify-end border-b border-gray-100'>
-          <button
-            onClick={() => setOpen(false)}
-            className='p-2 text-gray-500 hover:text-red-500 rounded-full hover:bg-gray-50 transition-colors'
-            aria-label='Tutup menu'
-          >
+          <button onClick={() => setOpen(false)} className='p-2 text-gray-500 hover:text-red-500 rounded-full hover:bg-gray-50 transition-colors' aria-label='Tutup menu'>
             <X className='w-6 h-6' />
           </button>
         </div>
@@ -193,54 +167,31 @@ export default function Navbar() {
         <div className='p-6 text-gray-800'>
           <ul className='space-y-2'>
             <li>
-              <a
-                href='/Find-location'
-                className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
-                onClick={() => setOpen(false)}
-              >
+              <a href='/Find-location' className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50' onClick={() => setOpen(false)}>
                 Cari Lokasi
               </a>
             </li>
             <li>
-              <a
-                href='/promo'
-                className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
-                onClick={() => setOpen(false)}
-              >
+              <a href='/promo' className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50' onClick={() => setOpen(false)}>
                 Promo
               </a>
             </li>
 
             {/* Accordion "Layanan" — sekarang lengkap & pakai href yang benar */}
             <li>
-              <button
-                onClick={() => setMobileLayananOpen(!mobileLayananOpen)}
-                className='w-full flex items-center justify-between py-3 font-medium hover:text-blue-600 border-b border-gray-50'
-              >
+              <button onClick={() => setMobileLayananOpen(!mobileLayananOpen)} className='w-full flex items-center justify-between py-3 font-medium hover:text-blue-600 border-b border-gray-50'>
                 Layanan
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-300 ${
-                    mobileLayananOpen ? 'rotate-180 text-blue-600' : ''
-                  }`}
-                />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileLayananOpen ? 'rotate-180 text-blue-600' : ''}`} />
               </button>
 
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  mobileLayananOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
-              >
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${mobileLayananOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <ul className='pl-4 py-2 space-y-3 text-sm text-gray-600 border-l-2 border-blue-100 ml-2 mt-2'>
                   {MENU_LAYANAN.map((group) => (
                     <React.Fragment key={group.title}>
                       <li className='font-semibold text-blue-600 pt-2'>{group.title}</li>
                       {group.items.map((item) => (
                         <li key={item.href}>
-                          <a
-                            href={item.href}
-                            className='block hover:text-blue-600'
-                            onClick={() => setOpen(false)}
-                          >
+                          <a href={item.href} className='block hover:text-blue-600' onClick={() => setOpen(false)}>
                             {item.label}
                           </a>
                         </li>
@@ -252,35 +203,21 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a
-                href='internasional-business'
-                className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
-                onClick={() => setOpen(false)}
-              >
+              <a href='internasional-business' className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50' onClick={() => setOpen(false)}>
                 International Business Setup
               </a>
             </li>
 
             <li>
-              <a
-                href='/tentang-kami'
-                className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50'
-                onClick={() => setOpen(false)}
-              >
+              <a href='/tentang-kami' className='block py-3 font-medium hover:text-blue-600 border-b border-gray-50' onClick={() => setOpen(false)}>
                 Tentang Kami
               </a>
             </li>
           </ul>
 
           <div className='mt-8 space-y-4'>
-            <div className='text-sm font-semibold text-gray-500 text-center'>
-              {/* <span className='text-blue-600'>ID</span> | EN | CN */}
-            </div>
-            <a
-              href='/hubungi-kami'
-              className='block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full text-sm font-medium transition-colors'
-              onClick={() => setOpen(false)}
-            >
+            <div className='text-sm font-semibold text-gray-500 text-center'>{/* <span className='text-blue-600'>ID</span> | EN | CN */}</div>
+            <a href='/hubungi-kami' className='block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full text-sm font-medium transition-colors' onClick={() => setOpen(false)}>
               Hubungi Kami
             </a>
           </div>

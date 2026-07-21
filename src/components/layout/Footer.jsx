@@ -20,23 +20,23 @@ const FOOTER_COLUMNS = [
     ],
   },
   // {
-  //   title: 'Lokasi',
+  //   title: 'Legalitas',
   //   links: [
-  //     { label: 'Jakarta Selatan', href: '/lokasi/jakarta-selatan' },
+  //     { label: 'Pendaftaran Persora Terbatas', href: '/lokasi/jakarta-selatan' },
   //     { label: 'Jakarta Pusat', href: '/lokasi/jakarta-pusat' },
   //     { label: 'Jakarta Utara', href: '/lokasi/jakarta-utara' },
   //     { label: 'Bekasi', href: '/lokasi/bekasi' },
   //   ],
   // },
-  {
-    title: 'Menu',
-    links: [
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Kebijakan Privasi', href: '/kebijakan-privasi' },
-      { label: 'S&K', href: '/syarat-ketentuan' },
-      { label: 'Karir', href: '/karir' },
-    ],
-  },
+  // {
+  //   title: 'Menu',
+  //   links: [
+  //     { label: 'FAQ', href: '/faq' },
+  //     { label: 'Kebijakan Privasi', href: '/kebijakan-privasi' },
+  //     { label: 'S&K', href: '/syarat-ketentuan' },
+  //     { label: 'Karir', href: '/karir' },
+  //   ],
+  // },
   {
     title: 'Lainnya',
     links: [
@@ -62,13 +62,11 @@ export default function Footer() {
         {/* --- Brand & kontak singkat --- */}
         <div className='sm:col-span-2 lg:col-span-1'>
           <div className='text-lg font-semibold'>
-            OneStop <span className='font-bold'>Business Hub</span>
+            Duduk Manis <span className='font-bold'>Business Hub</span>
           </div>
-          <p className='text-sm text-gray-400 mt-2'>
-            Solusi bisnis terpadu untuk kebutuhan perusahaan lokal dan internasional.
-          </p>
-          <a href='tel:02129222999' className='block mt-3 text-sm hover:text-blue-400 transition-colors'>
-            Hotline: 021 29 222 999
+          <p className='text-sm text-gray-400 mt-2'>Solusi bisnis terpadu untuk kebutuhan perusahaan lokal dan internasional.</p>
+          <a href='tel:+62 822-6010-0964' className='block mt-3 text-sm hover:text-blue-400 transition-colors'>
+            Hotline: +62 822-6010-0964
           </a>
           {/* <div className='flex gap-3 mt-4'>
             {SOCIAL_LINKS.map(({ label, href, Icon }) => (
@@ -94,7 +92,7 @@ export default function Footer() {
             <br />
             CS:{' '}
             <a href='mailto:cs@domain.co.id' className='hover:text-white transition-colors'>
-              cs@domain.co.id
+              info@dudukmanis.com
             </a>
           </p>
         </div>
@@ -116,9 +114,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className='bg-black/40 text-sm text-center py-3'>
-        Copyright © 2026 One Stop Business Hub. All rights reserved.
-      </div>
+      <div className='bg-black/40 text-sm text-center py-3'>Copyright © 2026 Duduk Manis. All rights reserved.</div>
     </footer>
   );
 }

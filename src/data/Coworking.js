@@ -1,45 +1,45 @@
 // Contoh isi file: data/coworking.js atau disatukan di data/locations.js
 
-export const categories = ["Semua", "Jakarta Selatan", "Jakarta Pusat", "Jakarta Barat"];
+export const categories = ['Semua', 'Jakarta Selatan', 'Jakarta Pusat', 'Jakarta Barat'];
 
 export const locations = [
   {
     id: 1,
-    city: "Jakarta Pusat", // Akan masuk ke prop 'badge' dan jadi acuan filter
-    title: "Menara GRAND KEBON SIRIH", // Akan masuk ke prop 'title'
-    address: " Jl. Kebon Sirih No.35 14, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340", // Akan masuk ke prop 'description'
-    image: "/images/coworking-rajawali.jpg",
-    features: ["High-Speed WiFi", "Free Coffee & Tea", "Lounge Area"],
+    city: 'Jakarta Pusat', // Akan masuk ke prop 'badge' dan jadi acuan filter
+    title: 'Menara GRAND KEBON SIRIH', // Akan masuk ke prop 'title'
+    address: ' Jl. Kebon Sirih No.35 14, RT.14/RW.2, Kb. Sirih, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10340', // Akan masuk ke prop 'description'
+    image: '/img/card/Coworking.png',
+    features: ['High-Speed WiFi', 'Free Coffee & Tea', 'Lounge Area'],
     pricing: {
-      price: "Rp 150.000",
-      period: "/ hari"
+      price: 'Rp 150.000',
+      period: '/ hari',
     },
-    link: "/coworking/menara-Grand-Kebun_sirih"
+    link: '/coworking/menara-Grand-Kebun_sirih',
   },
-  {
-    id: 2,
-    city: "Jakarta Selatan",
-    title: "Office 8 Coworking",
-    address: "Gedung Office 8, Level 18-A. Jalan Senopati No. 8B, SCBD",
-    image: "/images/coworking-office8.jpg",
-    features: ["High-Speed WiFi", "Free Coffee & Tea", "Pantry"],
-    pricing: {
-      price: "Rp 150.000",
-      period: "/ hari"
-    },
-    link: "/coworking/office-8"
-  },
-  {
-    id: 3,
-    city: "Jakarta Pusat",
-    title: "The City Tower Coworking",
-    address: "The City Tower Lt. 12 Unit 1N, Jl. MH Thamrin No. 81",
-    image: "/images/coworking-city-tower.jpg",
-    features: ["High-Speed WiFi", "Free Coffee & Tea", "City View"],
-    pricing: {
-      price: "Rp 150.000",
-      period: "/ hari"
-    },
-    link: "/coworking/the-city-tower"
-  }
+  // {
+  //   id: 2,
+  //   city: 'Jakarta Selatan',
+  //   title: 'Office 8 Coworking',
+  //   address: 'Gedung Office 8, Level 18-A. Jalan Senopati No. 8B, SCBD',
+  //   image: '/images/coworking-office8.jpg',
+  //   features: ['High-Speed WiFi', 'Free Coffee & Tea', 'Pantry'],
+  //   pricing: {
+  //     price: 'Rp 150.000',
+  //     period: '/ hari',
+  //   },
+  //   link: '/coworking/office-8',
+  // },
+  // {
+  //   id: 3,
+  //   city: 'Jakarta Pusat',
+  //   title: 'The City Tower Coworking',
+  //   address: 'The City Tower Lt. 12 Unit 1N, Jl. MH Thamrin No. 81',
+  //   image: '/images/coworking-city-tower.jpg',
+  //   features: ['High-Speed WiFi', 'Free Coffee & Tea', 'City View'],
+  //   pricing: {
+  //     price: 'Rp 150.000',
+  //     period: '/ hari',
+  //   },
+  //   link: '/coworking/the-city-tower',
+  // },
 ];

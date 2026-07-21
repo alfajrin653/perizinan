@@ -1,20 +1,49 @@
 <!--
   index.html
-  Entrypoint and Google Fonts for One Stop Business Hub
+  Entrypoint and Google Fonts for Duduk Manis
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duduk Manis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- 1. Default SEO & Title (Akan ditimpa oleh Helmet nanti, tapi penting sebagai cadangan awal) -->
+    <title>Duduk Manis - Jasa Pembuatan PT, CV & Firma</title>
+    <meta name="description" content="Solusi legalitas bisnis terpercaya. Kami melayani jasa pembuatan PT, CV, dan Firma dengan proses cepat, resmi, dan harga transparan." />
+    <meta name="theme-color" content="#2563eb" />
+    <!-- Ubah warna hex ini sesuai warna utama brand Anda -->
+
+    <!-- 2. Favicon (Ikon kecil di tab browser) -->
+    <link rel="icon" type="image/svg+xml" href="/logo-dm.png" />
+    <!-- Ganti href dengan path logo Anda nanti, misal: /logo.png -->
+
+    <!-- 3. Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- 4. Schema Markup (Kode Rahasia untuk Google Sitelinks & Profil Bisnis) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Duduk Manis",
+        "url": "https://www.dudukmanis.com",
+        "logo": "https://www.dudukmanis.com/logo.png",
+        "description": "Layanan jasa pembuatan PT, CV, dan Firma resmi dengan proses cepat.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+62-812-3456-7890",
+          "contactType": "customer service",
+          "areaServed": "ID",
+          "availableLanguage": "Indonesian"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
